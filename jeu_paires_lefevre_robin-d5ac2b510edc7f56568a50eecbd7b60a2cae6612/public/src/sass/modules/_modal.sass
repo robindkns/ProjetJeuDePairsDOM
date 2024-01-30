@@ -1,0 +1,46 @@
+.modalRejouer
+    z-index: 1
+    position: fixed
+    overflow: hidden
+    display: none
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0,0.5)
+
+.modalContenu
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 20px
+    width: 80%
+    gap: 2%
+    animation: apparition 1s ease forwards
+    color: white
+    flex-direction: column
+    font-size: 50px
+    div
+        display: flex
+        gap: 10%
+        font-size: 30px
+        justify-content: center
+        align-items: center
+        width: 500px
+        button
+            background-color: #8f9ce1
+            border: none
+            border-radius: 5px
+            color: #454854
+            width: 100%
+            &:hover
+                background-color: #6574be
+
+@keyframes apparition
+    0%
+        translate: 0% 0% 
+    100%
+        translate: 0% 175%

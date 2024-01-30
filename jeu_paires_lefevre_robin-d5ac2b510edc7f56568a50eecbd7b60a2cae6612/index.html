@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTACardGame</title>
+    <link rel="stylesheet" href="./public/css/app.css"> 
+</head>
+<body>
+    <audio autoplay="autoplay" controls="controls" loop>
+        <source src="./public/img/Haddaway - What is Love (Audio).mp3" type="audio/mp3" />     
+    </audio>
+    <video autoplay muted loop id="bgVideoHome">
+        <source src="./public/img/grand-theft-auto-vi-moewalls-com.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="bgVideoGame">
+        <source src="./public/img/lucia-and-jason-grand-theft-auto-vi-moewalls-com.mp4" type="video/mp4">
+    </video>
+    <div class="inputPseudo">
+        <span>Quel est votre pseudo ?</span><input>
+    </div>
+    <div class="game">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./public/img/cardwallpaper.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="./public/img/character1.png" data-card-name="character1">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./public/img/cardwallpaper.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="./public/img/character1.png" data-card-name="character1">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./public/img/cardwallpaper.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="./public/img/crazyguy.png" data-card-name="crazyguy">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./public/img/cardwallpaper.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="./public/img/crazyguy.png" data-card-name="crazyguy">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./public/img/cardwallpaper.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="./public/img/lucia.png" data-card-name="lucia">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./public/img/cardwallpaper.jpg">
+                </div>
+                <div class="card-back">
+                    <img src="./public/img/lucia.png" data-card-name="lucia">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modalRejouer">
+        <div class="modalContenu">
+            <span>VOULEZ-VOUS REJOUER ?</span>
+            <div>
+                <button id="play">REJOUER</button><button id="changeUser">CHANGER DE JOUEUR</button>
+            </div>
+        </div>
+    </div>
+    <div class="compteurDiv">
+        <span id="compteur">0</span>
+    </div>
+    <div class="scores">
+        <span><u>HIGHSCORES</u></span>
+    </div>
+    <div class="player">
+        <span><u>CURRENT PLAYER</u></span><span id="currentPlayer"></span>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
